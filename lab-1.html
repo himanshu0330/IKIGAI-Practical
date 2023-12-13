@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duplicate Removal</title>
+  </head>
+  <body>
+    <h1>Hello! this is the program for Removing Duplicates from the Array</h1>
+    <h2>Unique Array Printed on Console!!</h2>
+    <script>
+      function removeDuplicates(inputArray) {
+        var resultArray = [];
+
+        for (var i = 0; i < inputArray.length; i++) {
+          if (resultArray.indexOf(inputArray[i]) === -1) {
+            resultArray.push(inputArray[i]);
+          }
+        }
+
+        return resultArray;
+      }
+
+      // Example usage:
+      var originalArray = [1, 2, 2, 3, 4, 4, 5, 6];
+      var uniqueArray = removeDuplicates(originalArray);
+
+      console.log(uniqueArray);
+    </script>
+  </body>
+</html>
